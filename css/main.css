@@ -21,7 +21,7 @@ main , .content{
 }
 
 .logo {
-    padding: 15px;
+    padding: 16px;
     float: left;
     width: 70%;
 }
@@ -29,10 +29,12 @@ main , .content{
 .redes-sociais ul li {
     margin-right: 23px;
     display: inline-block;
+    float: left;
+    list-style: none;
 }
 
 .redes-sociais {
-    width: 20%;
+    width: 25%;
     float: right;
 }
 
@@ -43,7 +45,7 @@ main , .content{
 }
 
 .menu-url {
-    height: 80px;
+    height: 70px;
     border-bottom: 3px solid #efefef;
 }
 
@@ -80,13 +82,14 @@ main , .content{
     width: 30%;
     float: right;
     text-align: center;
+    padding-top: 12px;
 }
 
 .busca input {
     background-image: url('../imagem/search.png');
     background-repeat: no-repeat;
     background-position: 95%;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 10px;
     padding: 12px;
     width: 180px;
@@ -108,8 +111,8 @@ button.slick-prev {
     background-color: transparent;
     background-image: url('../imagem/seta-esquerda.jpg');
     position: absolute;
-    top: 35%;
-    left: 15%;
+    top: 38%;
+    left: 10%;
     z-index: 9;
 }
 
@@ -121,8 +124,8 @@ button.slick-next {
     background-color: transparent;
     background-image: url('../imagem/seta-direita.jpg');
     position: absolute;
-    top: 35%;
-    right: 15%;
+    top: 38%;
+    right: 10%;
     z-index: 9;
 }
 
@@ -146,7 +149,7 @@ button.slick-next {
     margin: 0 auto;
     width: 50%;
     position: absolute;
-    left: 50%;   
+    left: 45%;   
     top: 93%;     
 }
 
@@ -173,21 +176,22 @@ li.slick-active button {
 .texto-destaque h1 {
     text-transform: uppercase;
     color: #818181;
-    font-style: 20px;
+    font-style: 30px;
 }
 
 .texto-destaque p {
-    color: #818181;
+    color: #9a9a9a;
     font-size: 15px;
 }
 
 .col-3 {
-    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
     width: 29%;
     position: relative;
     float: left;
+    margin-left: 15px;
+    text-align: center;
 }
 
 .bloco-imagem img {
@@ -202,11 +206,10 @@ li.slick-active button {
     padding-top: 15px;
     padding-bottom: 15px;
     margin-left: 10px;
-
 }
 
 .bloco-imagem b, p {
-    text-align: left;
+    text-align: center;
 }
 
 .bloco-texto {
@@ -215,6 +218,7 @@ li.slick-active button {
 
 h3 {
     font-weight: normal!important;
+    text-align: center;
 }
 
 .bloco-imagem-texto {
@@ -225,9 +229,108 @@ h3 {
     width: 100%;
     display: inline-block;
     content: '';
-    height: 52px;
+    height: 50px;
     background: #ffffff;
     background-image: url('../imagem/setinha.png');
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.bloco-imagem-texto:after {
+    width: 100%;
+    display: inline-block;
+    content: '';
+    height: 50px;
+    background: #eeeeee;
+}
+
+.col-4 {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+
+.col-4 img {
+    cursor: pointer;
+    margin: 0 auto;
+    padding-top: 1em;
+    vertical-align: middle;
+}
+
+.col-4 img:hover {
+    margin-top: 10px!important;
+    position: relative!important;
+}
+
+.logos-rodape {
+    height: 170px;
+}
+
+.logos-rodape img {
+    margin-top: 40px;
+}
+
+.footer h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    display: inline-block;
+}
+
+.footer {
+    background-image: url('../imagem/fundo-rodape.png');
+    color: #fff;
+}
+
+.clock {
+    color: #898989!important;
+}
+
+.clock:before {
+    float: left;
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url('../imagem/clock.png');
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+
+.col-4 p {
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    text-align: justify;
+}
+
+.local:before, .email:before , .contato:before {
+    content: '';
+    width: 17px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    padding-left: 5px;
+}
+
+.local:before {
+    background-image: url('../imagem/incon-local.png');
+}
+.email:before {
+    background-image: url('../imagem/icon-email.png');
+}
+
+.contato:before {
+    background-image: url('../imagem/icon-tel.png');
+}
+
+.final-rodape {
+    background-image: url('../imagem/final-rodape.png');
+    height: 60px;
+}
+
+.final-rodape p {
+    text-align: center;
+    padding: 20px 0 30px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
